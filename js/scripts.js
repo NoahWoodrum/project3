@@ -13,3 +13,12 @@ function beepboop(number){
   
   return returnedOutput.join(" ");
 }
+
+//UserInterface Logic
+$(document).ready(function() {
+  $("form#input").submit(function(event) {
+    event.preventDefault();
+    let int = $("#int").val();
+    $("#output").show();
+    });
+  }); 
