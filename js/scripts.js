@@ -18,7 +18,8 @@ function beepboop(number){
 $(document).ready(function() {
   $("form#input").submit(function(event) {
     event.preventDefault();
-    let int = $("#int").val();
-    $("#output").show();
+    const userInput = $("#mrRoboger").val();
+    const outputResult = beepboop(userInput);
+    $("#returnedOutput").text(outputResult);
     });
   }); 
